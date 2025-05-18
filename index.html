@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>G.S MUSHONGI - School Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Карусель -->
+  <section class="carousel-container" id="home">
+    <div class="school-name">G.S MUSHONGI</div>
+    <div class="carousel">
+      <img class="carousel-item" src="images/69158105_2539971416070355_6407572304863166464_n.jpg" alt="Image 1" />
+      <img class="carousel-item" src="images/69329744_2541634075904089_1338938616960778240_n.jpg" alt="Image 2" />
+    </div>
+    <div class="dots-container">
+      <span class="dot active" onclick="moveToSlide(0)"></span>
+      <span class="dot" onclick="moveToSlide(1)"></span>
+    </div>
+  </section>
+
+  <!-- About School -->
+  <div class="about-school" id="about">
+    <div class="about-school-content">
+      <div class="about-image">
+        <img src="images/FpmR4iaX0AIfX0w.jpeg" alt="School Image" />
+      </div>
+      <div class="about-text">
+        <h2>About GS MUSHONGI</h2>
+        <p>
+            GS MUSHONGI is a vibrant educational institution located in Rwanda, dedicated to nurturing young minds and shaping future leaders. With a strong commitment to academic excellence and personal development, the school provides a supportive learning environment where every student is encouraged to reach their full potential.        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Statistics -->
+  <section class="statistics" id="statistics">
+    <h2 class="section-title">STATISTICS</h2>
+    <div class="stats-container">
+      <div class="stat-block">
+        <div class="stat-number">134</div>
+        <div class="stat-label">STUDENTS</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-number">6</div>
+        <div class="stat-label">TEACHERS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- map -->
+  <section id="map" style="height: 500px; width: 86%; padding-top: 90px; padding-left: 100px; padding-right: 50px;">
+    <iframe
+      src="https://www.google.com/maps?q=WRR8+82H,GS+Mushongi,Rwanda&output=embed"
+      width="100%"
+      height="100%"
+      padding: 40px 20px;
+      frameborder="0"
+      style="border:0;"
+      allowfullscreen=""
+      aria-hidden="false"
+      tabindex="0">
+    </iframe>
+  </section>
+  
+ <!-- gallery -->
+
+ <h2 class="gallery-title">GALLERY</h2>
+
+ <!-- Подключаем Lightbox CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+
+ <section id="gallery" class="gallery">
+  <div class="gallery-item">
+    <a href="images/69158105_2539971416070355_6407572304863166464_n.jpg" data-lightbox="gallery" data-title="Photo 1">
+      <img src="images/69158105_2539971416070355_6407572304863166464_n.jpg" alt="Photo 1" class="gallery-image"/>
+    </a>
+  </div>
+  <div class="gallery-item">
+    <a href="images/69329744_2541634075904089_1338938616960778240_n.jpg" data-lightbox="gallery" data-title="Photo 2">
+      <img src="images/69329744_2541634075904089_1338938616960778240_n.jpg" alt="Photo 2" class="gallery-image"/>
+    </a>
+  </div>
+  <div class="gallery-item">
+    <a href="images/FpmR4iaX0AIfX0w.jpeg" data-lightbox="gallery" data-title="Photo 3">
+      <img src="images/FpmR4iaX0AIfX0w.jpeg" alt="Photo 3" class="gallery-image"/>
+    </a>
+  </div>
+  <div class="gallery-item">
+    <a href="images/69090898_2541634405904056_5206330060239273984_n.jpg" data-lightbox="gallery" data-title="Photo 4">
+      <img src="images/69090898_2541634405904056_5206330060239273984_n.jpg" alt="Photo 4" class="gallery-image"/>
+    </a>
+  </div>
+  <div class="gallery-item">
+    <a href="images/69432347_2541634442570719_2576387418710081536_n.jpg" data-lightbox="gallery" data-title="Photo 5">
+      <img src="images/69432347_2541634442570719_2576387418710081536_n.jpg" alt="Photo 5" class="gallery-image"/>
+    </a>
+  </div>
+  <div class="gallery-item">
+    <a href="images/69523649_2541634065904090_5734463350901833728_n.jpg" data-lightbox="gallery" data-title="Photo 6">
+      <img src="images/69523649_2541634065904090_5734463350901833728_n.jpg" alt="Photo 6" class="gallery-image"/>
+    </a>
+  </div>
+ </section>
+
+ <!-- Подключаем Lightbox JS -->
+ <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+
+ <!-- Contact Section -->
+ <section id="contact" class="contact-section">
+    <h2 class="section-title">CONTACT</h2>
+    <p class="subtitle">PLEASE REACH US ON</p>
+  
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>ADDRESS</h3>
+        <p>WRR8+82H, Rwanda</p>
+      </div>
+      <div class="info-box">
+        <h3>EMAIL</h3>
+        <p>To be added later</p>
+      </div>
+      <div class="info-box">
+        <h3>PHONE</h3>
+        <p>0788806018</p>
+      </div>
+    </div>
+  
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email" required />
+  
+      <label for="message">How can we help?</label>
+      <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+  
+      <div class="form-footer">
+        <button type="submit">Send a request</button>
+        <div class="checkbox-inline">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+        </div>
+      </div>
+    </form>
+  
+    <div class="subscribe-box">
+      <h2>GS MUSHONGI</h2>
+      <p>Please subscribe</p>
+      <input type="email" id="subscribe-email" placeholder="Enter your email" />
+      <button onclick="subscribe()">Subscribe*</button>
+    </div>
+ </section>
+  
+ 
+  <script src="script.js"></script>
+</body>
+</html>
