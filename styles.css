@@ -361,3 +361,197 @@ body {
   .checkbox-inline input {
     margin: 0;
   }
+
+/* ===== MOBILE ADAPTATION ===== */
+@media (max-width: 768px) {
+
+  /* Шапка */
+  header {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  header nav ul li {
+    margin: 5px 10px;
+  }
+
+  header nav ul li a {
+    font-size: 17px;
+  }
+
+  /* Карусель */
+  .carousel-container {
+    height: 60vh;
+  }
+
+  .carousel,
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .school-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  /* About Section */
+
+.about-school {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+
+.about-school-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.about-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.about-text {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+  /* Statistics */
+  .stats-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .stat-number {
+    font-size: 48px;
+  }
+
+  .stat-label {
+    font-size: 18px;
+  }
+
+  #map {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Gallery */
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-title {
+    font-size: 28px;
+  }
+
+  /* Контакты */
+  .contact-section {
+    padding: 30px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px; /* делаем отступы по краям, чтобы не прилипало */
+    box-sizing: border-box;
+  }
+
+  .info-box {
+    width: 88%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+ form {
+    padding: 16px 16px;
+    box-sizing: border-box;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .checkbox-inline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    max-width: 20%;
+    white-space: nowrap;
+  }
+
+  .checkbox-inline input {
+    margin: 0;
+    width: 20%;
+    flex-shrink: 0;
+  }
+
+  .subscribe-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-box input {
+    width: 100% !important;
+    margin: 0 0 10px 0;
+  }
+
+  .subscribe-box button {
+    width: 100%;
+  }
+}
